@@ -7,8 +7,9 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+ font-family: 'Open Sans', sans-serif;
   padding-bottom: 20px;
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -17,13 +18,35 @@ body {
 .footer {
   padding-left: 15px;
   padding-right: 15px;
+  padding-top:17px;
 }
+
 
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
+  position: relative;
 }
-
+.titel-header{
+  display: inline;
+  width: 745px;
+  height: 87px;
+  font-size: 57px;
+  border-left: #FD0 solid 12px;
+  border-bottom: red solid 11px;
+  top: -3px;
+  left: 270px;
+  position: absolute;
+  padding: 10px;
+  color: #777875;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+.fb-like{
+  position: absolute !important;
+  right: 0;
+  bottom: 13px;
+}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -37,6 +60,10 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+.footer-tekst{
+  margin:0;
 }
 
 .container-narrow > hr {
@@ -47,16 +74,31 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background: url("robotmaaier.jpg") no-repeat;
+  background-size: 100%;
+  height: 500px;
+  text-align: left;
+  margin-bottom: 0;
+}
+.jumbotron h1{
+  font-size: 50px ;
+  color: #fff ;
+}
+.logo{
+  width: 260px;
 }
 
 .jumbotron .btn {
   font-size: 21px;
-  padding: 14px 24px;
+  padding: 9px 24px;
+  background: rgb(255, 221, 0);
+  color: rgb(119, 120, 117);
+  margin-top: 10px;
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+
 }
 
 .marketing p + h4 {
@@ -64,9 +106,9 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media all and  (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1040px;
   }
 
   /* Remove the padding we set earlier */
@@ -85,5 +127,45 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+@media all and (max-width: 1199px){
+  body{
+
+  }
+  .titel-header {
+    width: 670px;
+  }
+}
+
+@media all and (max-width: 991px){
+  body{
+ 
+  }
+  ._li{
+    margin-top:10px;
+  }
+  .titel-header {
+    width: 480px;
+    height: 77.7px;
+    left: 240px;
+    font-size: 46px;
+  }
+  .logo {
+   width: 231px;
+  }
+  .jumbotron h1 {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 767px){
+  body{
+
+  }
+}
+@media all and (max-width: 360px){
+  body{
+
   }
 }

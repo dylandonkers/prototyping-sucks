@@ -5,10 +5,10 @@ app.set('port', (process.env.PORT || 5000));
 
 var mongoose = require('mongoose');
 
-mongoose.connect('rick:BarBar@ds048537.mongolab.com:48537/prototyping-sucks', function (error) {
+mongoose.connect('dylan:dylan@ds033559.mongolab.com:33559/loena', function (error) {
     if (error) {
         console.log(error);
-    }
+    } 
 });
 
 var kittySchema = mongoose.Schema({
